@@ -1,0 +1,35 @@
+
+/* Container */
+#container {
+    text-align: left; 
+}
+
+/* Heading */
+h1 {
+    color: black;
+    font-size: 24px;
+}
+
+/* Buttons */
+button {
+    background-color: green; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    justify-content: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+button:hover {
+    background-color: grey; 
+}
+
+#text, img, button {
+    display: block;
+    margin-bottom: 10px; 
+}

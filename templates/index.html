@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example web server</title>
+    <link rel="stylesheet" href="{{ url_for('serve_static', filename='css/style.css') }}">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+    <div id="container">
+        <h1 id="text">Hello, Ditto!</h1>
+        <img src="{{ url_for('serve_static', filename='images/spring.png') }}" alt="Example Image">
+        <button onclick="changeTextColor()">Change Text Color</button>
+        <button onclick="showAlert()">Show Alert</button>
+    </div>
+    <script src="{{ url_for('serve_static', filename='js/script.js') }}"></script>
+</body>
+</html>
